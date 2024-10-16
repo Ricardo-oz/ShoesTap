@@ -34,7 +34,7 @@ class DetailsFragment : Fragment() {
         mainActivity = requireActivity() as MainActivity
 
         arguments?.let {
-            item = it.getParcelable(ARG_ITEM) ?: Item("", "", "", 0.0f)
+            item = it.getParcelable(ARG_ITEM) ?: Item("", "", "", 0.000f)
         }
 
         binding.tvTitulo.text = item.name
